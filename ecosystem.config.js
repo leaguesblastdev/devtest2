@@ -5,7 +5,7 @@
          cwd: '/usr/src/app/sapper/',
          script: 'NODE_ENV=production && npm run build && npm run start',
          instances: 4 ,
-	 exec_mode: cluster,
+	 exec_mode: 'cluster',
          autorestart: true,
          watch: true,
          max_memory_restart: '512M',
