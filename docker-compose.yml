@@ -1,0 +1,12 @@
+version: '2'
+services:
+  sapper:
+    image: pm2-sapper:1.0
+    restart: unless-stopped
+    volumes:
+      - sapper_data:/usr/src/app
+    ports:
+      - 9158:3000
+volumes:
+  sapper_data:
+    driver: local
